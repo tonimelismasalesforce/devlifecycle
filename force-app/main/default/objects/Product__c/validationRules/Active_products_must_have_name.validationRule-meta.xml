@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_products_must_have_name</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISBLANK(Name)  &amp;&amp;  Active__c  = true</errorConditionFormula>
+    <errorMessage>Active products must have name</errorMessage>
+</ValidationRule>
